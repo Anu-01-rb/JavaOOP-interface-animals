@@ -15,4 +15,14 @@ public class Cat extends Mammals{
         this.name = name;
     }
     
+    Cat(String name, boolean haveHair, int legs, String color){
+        this.name = name;
+        this.warmBlood = true;
+        this.haveHair = haveHair;
+        this.haveLegs = true;
+        this.habitat = "Global";
+        this.numberOfLegs = legs;
+        this.colors = color;
+        this.haveWings = false;
+    }
 }
