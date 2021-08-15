@@ -9,7 +9,7 @@ package com.anurak.animal.lives;
  *
  * @author anurak
  */
-abstract class Birds extends Animals{
+public class Birds extends Animals{
     protected boolean lowFly;
     protected boolean floatOnWater;
     
@@ -21,11 +21,17 @@ abstract class Birds extends Animals{
     
     @Override
     public void speak(){
+        super.speak();
         System.out.println("Birds Speak");
     }
     
     @Override
     public void walk(){
+        super.walk();
         System.out.println("Birds Walk");
+    }
+    
+    public void fly(){
+        System.out.println("Birds Fly");
     }
 }

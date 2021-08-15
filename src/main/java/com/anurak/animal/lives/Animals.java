@@ -9,7 +9,7 @@ package com.anurak.animal.lives;
  *
  * @author anurak
  */
-abstract class Animals {
+public class Animals {
 //     public String respiratorySystem;
      
      protected String name;
@@ -18,13 +18,23 @@ abstract class Animals {
      protected boolean haveWings;
      protected boolean haveLegs;
      protected String habitat;
+     protected String colors;
      
-    Animals (String name, boolean wb, boolean hh, boolean hw, boolean hl, String hbt){
+    Animals (String name, boolean wb, boolean hh, boolean hw, boolean hl, String hbt, String cols){
         this.name = name;
         this.warmBlood = wb;
         this.haveHair = hh;
         this.haveWings = hw;
         this.haveLegs = hl;
         this.habitat = hbt;
+        this.colors = cols;
+    }
+    
+    public void speak(){
+        System.out.println("Animals Speak");
+    }
+    
+    public void walk(){
+        System.out.println("Animals Walk");
     }
 }

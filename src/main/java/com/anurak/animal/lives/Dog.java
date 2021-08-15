@@ -9,27 +9,20 @@ package com.anurak.animal.lives;
  *
  * @author anurak
  */
-public class Duck extends Birds{
+public class Dog extends Mammals{
     
-    public Duck(String name, String cols){
-       super(name, "Global", true, true, cols);
+    public Dog(String name, boolean hh, String cols){
+        super(name, hh, true, "Global", 4, cols);
     }
-    
     @Override
     public void speak(){
         super.speak();
-        System.out.println("Duck Speak");
+        System.out.println("Dog Speak");
     }
     
     @Override
     public void walk(){
         super.walk();
-        System.out.println("Duck Walk");
-    }
-    
-    @Override
-    public void fly(){
-        super.fly();
-        System.out.println("Duck Fly");
+        System.out.println("Gog Walk");
     }
 }

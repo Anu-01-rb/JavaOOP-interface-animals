@@ -9,7 +9,7 @@ package com.anurak.animal.lives;
  *
  * @author anurak
  */
-abstract class Mammals extends Animals{
+public class Mammals extends Animals{
     
     
     protected int numberOfLegs;
@@ -22,7 +22,13 @@ abstract class Mammals extends Animals{
     
     @Override
     public void speak(){
+        super.speak();
         System.out.println("Mammals Speak");
     }
     
+    @Override
+    public void walk(){
+        super.walk();
+        System.out.println("Mammals Walk");
+    }
 }

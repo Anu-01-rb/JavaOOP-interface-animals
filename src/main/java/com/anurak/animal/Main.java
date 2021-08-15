@@ -4,12 +4,26 @@
  * and open the template in the editor.
  */
 package com.anurak.animal;
-package com.anurak.animal.lives;
 
+import com.anurak.animal.lives.*;
 /**
  *
  * @author anurak
  */
 public class Main {
-    
+    public static void main(String[] args){
+        Cat sommiew = new Cat("sommiew", true, "B&W");
+        Dog aibo = new Dog("aibo", true, "Brown");
+        Duck sally = new Duck("sally", "Dark Brown");
+        
+        Animals[] animals = {sommiew, aibo, sally};
+        
+        for(Animals i : animals){
+            i.walk();
+            i.speak();
+            if(i instanceof Birds){
+                ((Birds)(i)).fly();
+            }
+        }
+    }
 }
