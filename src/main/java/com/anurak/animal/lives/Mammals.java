@@ -31,4 +31,9 @@ public class Mammals extends Animals{
         super.walk();
         System.out.println("Mammals Walk");
     }
+    
+    @Override
+    public String toString(){
+        return String.format("My name is %s, I'm a mammal I'm %s", name , colors);
+    }
 }

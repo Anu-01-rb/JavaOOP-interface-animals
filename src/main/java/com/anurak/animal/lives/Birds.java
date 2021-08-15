@@ -34,4 +34,9 @@ public class Birds extends Animals{
     public void fly(){
         System.out.println("Birds Fly");
     }
+    
+    @Override
+    public String toString(){
+        return String.format("My name is %s, I'm a bird I'm %s, I have wings", name , colors);
+    }
 }

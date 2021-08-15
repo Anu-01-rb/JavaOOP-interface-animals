@@ -37,4 +37,9 @@ public class Animals {
     public void walk(){
         System.out.println("Animals Walk");
     }
+    
+    @Override
+    public String toString(){
+        return String.format("My name is %s, I'm an animal, I'm %s", name , colors);
+    }
 }

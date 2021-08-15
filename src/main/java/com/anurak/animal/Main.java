@@ -19,6 +19,7 @@ public class Main {
         Animals[] animals = {sommiew, aibo, sally};
         
         for(Animals i : animals){
+            System.out.println(i);
             i.walk();
             i.speak();
             if(i instanceof Birds){

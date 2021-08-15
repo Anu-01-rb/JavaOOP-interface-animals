@@ -25,4 +25,9 @@ public class Dog extends Mammals{
         super.walk();
         System.out.println("Gog Walk");
     }
+    
+    @Override
+    public String toString(){
+        return String.format("My name is %s, I'm a cat I'm %s", name , colors);
+    }
 }
