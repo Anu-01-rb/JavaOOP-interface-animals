@@ -9,20 +9,18 @@ package com.anurak.animal.lives;
  *
  * @author anurak
  */
-public class Cat extends Mammals{
+abstract class Cat extends Mammals{
     
-    Cat(String name){
-        this.name = name;
+    Cat(String name, boolean hh, String cols){
+        super(name, hh, true, "Global", 4, cols);
+    }
+    @Override
+    public void speak(){
+        System.out.println("Cat Speak");
     }
     
-    Cat(String name, boolean haveHair, int legs, String color){
-        this.name = name;
-        this.warmBlood = true;
-        this.haveHair = haveHair;
-        this.haveLegs = true;
-        this.habitat = "Global";
-        this.numberOfLegs = legs;
-        this.colors = color;
-        this.haveWings = false;
+    @Override
+    public void walk(){
+        System.out.println("Birds Walk");
     }
 }

@@ -9,6 +9,13 @@ package com.anurak.animal.lives;
  *
  * @author anurak
  */
-abstract class Insects extends Animals {
+abstract class Duck extends Birds{
     
+    Duck(String name, String cols){
+       super(name, "Global", true, true, cols);
+    }
+    
+    public void speak(){
+        System.out.println("Duck Speak");
+    }
 }

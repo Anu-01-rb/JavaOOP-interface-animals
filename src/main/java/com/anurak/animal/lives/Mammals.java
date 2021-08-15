@@ -10,6 +10,19 @@ package com.anurak.animal.lives;
  * @author anurak
  */
 abstract class Mammals extends Animals{
+    
+    
     protected int numberOfLegs;
-    protected String colors;
+    
+    
+    Mammals(String name, boolean hh, boolean hl, String hbt,int legs, String cols){
+        super(name, true, hh, false, hl, hbt, cols);
+        this.numberOfLegs = legs;
+    }
+    
+    @Override
+    public void speak(){
+        System.out.println("Mammals Speak");
+    }
+    
 }
