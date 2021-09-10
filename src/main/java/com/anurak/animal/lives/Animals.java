@@ -33,7 +33,7 @@ abstract public class Animals {
     
     abstract void speak();
     
-    abstract public void walk();
+    abstract public void move();
     
     @Override
     abstract public String toString();

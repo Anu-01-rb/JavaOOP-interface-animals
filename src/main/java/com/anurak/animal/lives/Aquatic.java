@@ -11,15 +11,10 @@ package com.anurak.animal.lives;
  * Burapha University
  *
  */
-abstract public class Land extends Animals{
+abstract public class Aquatic extends Animals{
     
-    
-    protected int numberOfLegs;
-    
-    
-    Land(String name, boolean hh, boolean hl, String hbt,int legs, String cols){
-        super(name, true, hh, false, hl, hbt, cols);
-        this.numberOfLegs = legs;
+    Aquatic(String name, String hbt, boolean coldBlood, String cols){
+        super(name, false, false, false, false, hbt, cols);
     }
     
     @Override
@@ -27,7 +22,7 @@ abstract public class Land extends Animals{
     
     @Override
     public void move(){
-    	System.out.printf("%s is walking", this.name);
+    	System.out.printf("%s is swimming.\n",this.name);
     }
     
     @Override

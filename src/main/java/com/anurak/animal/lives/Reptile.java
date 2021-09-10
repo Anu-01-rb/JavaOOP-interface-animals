@@ -1,3 +1,4 @@
+
 /*
  * OOP : Object-Oriented Programming
  * Abstract : Animals Project
@@ -11,24 +12,23 @@ package com.anurak.animal.lives;
  * Burapha University
  *
  */
-abstract public class Land extends Animals{
+abstract public class Reptile extends Animals{
     
     
     protected int numberOfLegs;
+    protected boolean landAndWater;
     
-    
-    Land(String name, boolean hh, boolean hl, String hbt,int legs, String cols){
-        super(name, true, hh, false, hl, hbt, cols);
+    Reptile(String name, boolean haveLeg, String hbt, int legs, String cols, boolean landAndWater){
+        super(name, false, false , false, haveLeg, hbt, cols);
         this.numberOfLegs = legs;
+	this.landAndWater = landAndWater;
     }
     
     @Override
     abstract public void speak();
     
     @Override
-    public void move(){
-    	System.out.printf("%s is walking", this.name);
-    }
+    abstract public void move();
     
     @Override
     abstract public String toString();

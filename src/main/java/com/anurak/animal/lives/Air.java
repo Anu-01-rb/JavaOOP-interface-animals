@@ -25,9 +25,9 @@ abstract public class Air extends Animals{
     abstract public void speak();
     
     @Override
-    abstract public void walk();
-    
-    abstract public void fly();
+    public void move(){
+    	System.out.prinf("%s is flying and %s can walking a little.\n", this.name, this.name);
+    }
     
     @Override
     abstract public String toString();
