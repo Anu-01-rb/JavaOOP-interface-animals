@@ -15,7 +15,7 @@ abstract public class Poultry extends Animals{
     protected boolean lowFly;
     protected boolean floatOnWater;
     
-    Air(String name, String hbt, boolean lf, boolean fow, String cols){
+    Poultry(String name, String hbt, boolean lf, boolean fow, String cols){
         super(name, true, true, true, true, hbt, cols);
         this.lowFly = lf;
         this.floatOnWater = fow;
@@ -26,7 +26,7 @@ abstract public class Poultry extends Animals{
     
     @Override
     public void move(){
-    	System.out.prinf("%s is flying and %s can walking a little.\n", this.name, this.name);
+    	System.out.printf("%s is flying and %s can walking a little.\n", this.name, this.name);
     }
     
     @Override

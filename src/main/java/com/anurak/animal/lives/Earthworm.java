@@ -13,7 +13,7 @@ package com.anurak.animal.lives;
  */
 public class Earthworm extends Animals{
     
-    public Earth(String name, String cols){
+    public Earthworm(String name, String cols){
         super(name, true, false, false, false, "Global", "Brown");
     }
 

@@ -29,6 +29,6 @@ public class Fish extends Aquatic{
     
     @Override
     public String toString(){
-        return String.format("Fish: %S,\n\tColor: %s\n\tWarm Blood: %b\n\tHabitat: %s\n\tLeg: %d\n", name, colors, warmBlood, habitat, numberOfLegs);
+        return String.format("Fish: %S,\n\tColor: %s\n\tWarm Blood: %b\n\tHabitat: %s\n", name, colors, warmBlood, habitat);
     }
 }

@@ -19,7 +19,6 @@ public class Bird extends Poultry{
     
     @Override
     public void speak(){
-        super.speak();
         System.out.println("Bird Speak");
     }
     

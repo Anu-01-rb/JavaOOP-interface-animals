@@ -19,7 +19,6 @@ public class Bat extends Poultry{
     
     @Override
     public void speak(){
-        super.speak();
         System.out.println("Bat Speak");
     }
     
