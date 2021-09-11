@@ -1,18 +1,20 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * OOP : Object-Oriented Programming
+ * Abstract : Animals Project
  */
 package com.anurak.animal.lives;
 
 /**
  *
- * @author anurak
+ * @author Anurak Yutthanawa
+ * 63160015 B.Sc. Computer Science
+ * Burapha University
+ *
  */
-public class Dog extends Mammals{
+public class Dog extends Land{
     
     public Dog(String name, boolean hh, String cols){
-        super(name, hh, true, "Global", 4, cols);
+        super(name, true, true, "Global", 4, cols);
     }
     @Override
     public void speak(){
@@ -21,13 +23,7 @@ public class Dog extends Mammals{
     }
     
     @Override
-    public void walk(){
-        super.walk();
-        System.out.println("Gog Walk");
-    }
-    
-    @Override
     public String toString(){
-        return String.format("My name is %s, I'm a cat I'm %s", name , colors);
+        return String.format("Dog: %S,\n\tColor: %s\n\tWarm Blood: %b\n\tHabitat: %s\n\tLeg: %d\n", name, colors, warmBlood, habitat, numberOfLegs);
     }
 }

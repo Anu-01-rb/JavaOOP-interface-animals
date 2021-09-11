@@ -11,20 +11,19 @@ package com.anurak.animal.lives;
  * Burapha University
  *
  */
-public class Bird extends Poultry{
+public class Human extends Land{
     
-    public Bird(String name, String cols){
-       super(name, "Global", false, false, cols);
+    public Human(String name, String cols){
+        super(name, true, true, "Global", 2, cols);
     }
-    
     @Override
     public void speak(){
         super.speak();
-        System.out.println("Bird Speak");
+        System.out.println("Human Speak");
     }
     
     @Override
     public String toString(){
-        return String.format("Bird: %S,\n\tColor: %s\n\tWarm Blood: %b\n\tHabitat: %s\n", name, colors, warmBlood, habitat);
+        return String.format("Human: %S,\n\tColor: %s\n\tWarm Blood: %b\n\tHabitat: %s\n\tLeg: %d\n", name, colors, warmBlood, habitat, numberOfLegs);
     }
 }

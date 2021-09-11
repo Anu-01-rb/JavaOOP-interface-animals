@@ -11,9 +11,9 @@ package com.anurak.animal.lives;
  * Burapha University
  *
  */
-public class Duck extends Birds{
+public class Bat extends Poultry{
     
-    public Duck(String name, String cols){
+    public Bat(String name, String cols){
        super(name, "Global", false, false, cols);
     }
     
