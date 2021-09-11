@@ -13,22 +13,22 @@ package com.anurak.animal.lives;
  */
 public class Earthworm extends Animals{
     
-    public Fish(String name, String cols){
-        super(name, "Global", cols, false);
+    public Earth(String name, String cols){
+        super(name, true, false, false, false, "Global", "Brown");
     }
 
     @Override
     public void speak(){
-        System.out.printf("%S Fish Speak???\n", name);
+        System.out.printf("%S Earthworm Speak???\n", name);
     }
 
     @Override
     public void move(){
-    	System.out.printf("%S Fish Swimming\n", name);
+    	System.out.printf("%S Earthworm Wiggling\n", name);
     }
     
     @Override
     public String toString(){
-        return String.format("Fish: %S,\n\tColor: %s\n\tWarm Blood: %b\n\tHabitat: %s\n\tLeg: %d\n", name, colors, warmBlood, habitat, numberOfLegs);
+        return String.format("Fish: %S,\n\tColor: %s\n\tWarm Blood: %b\n\tHabitat: %s\n", name, colors, warmBlood, habitat);
     }
 }
