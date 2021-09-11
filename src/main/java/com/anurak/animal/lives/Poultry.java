@@ -11,7 +11,7 @@ package com.anurak.animal.lives;
  * Burapha University
  *
  */
-abstract public class Air extends Animals{
+abstract public class Poultry extends Animals{
     protected boolean lowFly;
     protected boolean floatOnWater;
     
