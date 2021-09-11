@@ -31,7 +31,7 @@ abstract public class Animals {
         this.colors = cols;
     }
     
-    abstract void speak();
+    abstract public void speak();
     
     abstract public void move();
     

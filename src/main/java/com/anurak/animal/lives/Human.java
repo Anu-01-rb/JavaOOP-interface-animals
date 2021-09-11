@@ -13,8 +13,8 @@ package com.anurak.animal.lives;
  */
 public class Human extends Land{
     
-    public Human(String name, String cols){
-        super(name, true, true, "Global", 2, cols);
+    public Human(String name){
+        super(name, true, true, "Global", 2, "Skinny");
     }
 
     @Override

@@ -12,19 +12,24 @@ import com.anurak.animal.lives.*;
  */
 public class Main {
     public static void main(String[] args){
-        Cat sommiew = new Cat("sommiew", true, "B&W");
-        Dog aibo = new Dog("aibo", true, "Brown");
-        Duck sally = new Duck("sally", "Dark Brown");
         
-        Animals[] animals = {sommiew, aibo, sally};
+        Cat nini = new Cat("Nini", "Orange");
+        Dog ricky = new Dog("Ricky", "White");
+        Human plaifah = new Human("Plaifah");
+        Fish nemo = new Fish("Nemo", "Red");
+        Crap krabby = new Crap("Krabby", "Orange");
+        Bird gag = new Bird("Gag", "White");
+        Bat vampy = new Bat("Vampy", "Black");
+        Crocodile baroque = new Crocodile("Baroque", "Brown");
+        Snake medusa = new Snake("Medusa", "Dark");
+        Earthworm palm = new Earthworm("Palm", "Pink");
         
-        for(Animals i : animals){
-            System.out.println(i);
-            i.walk();
+        Animals[] sut = {nini, ricky, plaifah, nemo, krabby, gag, vampy, baroque, medusa, palm};
+        
+        for (Animals i : sut){
             i.speak();
-            if(i instanceof Birds){
-                ((Birds)(i)).fly();
-            }
+            i.move();
+            System.out.println(i);
         }
     }
 }
