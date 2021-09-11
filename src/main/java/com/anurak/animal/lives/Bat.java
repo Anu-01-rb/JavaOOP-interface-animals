@@ -1,13 +1,15 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * OOP : Object-Oriented Programming
+ * Abstract : Animals Project
  */
 package com.anurak.animal.lives;
 
 /**
  *
- * @author anurak
+ * @author Anurak Yutthanawa
+ * 63160015 B.Sc. Computer Science
+ * Burapha University
+ *
  */
 public class Duck extends Birds{
     
