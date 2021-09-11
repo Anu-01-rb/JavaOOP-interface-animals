@@ -16,9 +16,9 @@ public class Cat extends Land{
     public Cat(String name, String cols){
         super(name, true, true, "Global", 4, cols);
     }
+
     @Override
     public void speak(){
-        super.speak();
         System.out.println("Cat Speak");
     }
     

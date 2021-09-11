@@ -13,17 +13,15 @@ package com.anurak.animal.lives;
  */
 abstract public class Aquatic extends Animals{
     
-    Aquatic(String name, String hbt, boolean coldBlood, String cols){
-        super(name, false, false, false, false, hbt, cols);
+    Aquatic(String name, String hbt, String cols, boolean haveLegs){
+        super(name, false, false, false, haveLegs, hbt, cols);
     }
     
     @Override
     abstract public void speak();
     
     @Override
-    public void move(){
-    	System.out.printf("%s is swimming.\n",this.name);
-    }
+    abstract public void move();
     
     @Override
     abstract public String toString();
