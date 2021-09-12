@@ -11,9 +11,9 @@ package com.anurak.animal.lives;
  * Burapha University
  *
  */
-public class Crap extends Aquatic{
+public class Crab extends Aquatic{
     
-    public Crap(String name, String cols){
+    public Crab(String name, String cols){
         super(name, "Global", cols, true);
     }
 

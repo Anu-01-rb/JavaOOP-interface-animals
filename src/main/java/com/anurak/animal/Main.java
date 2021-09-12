@@ -17,7 +17,7 @@ public class Main {
         Dog ricky = new Dog("Ricky", "White");
         Human plaifah = new Human("Plaifah");
         Fish nemo = new Fish("Nemo", "Red");
-        Crap krabby = new Crap("Krabby", "Orange");
+        Crab krabby = new Crab("Krabby", "Orange");
         Bird gag = new Bird("Gag", "White");
         Bat vampy = new Bat("Vampy", "Black");
         Crocodile baroque = new Crocodile("Baroque", "Brown");
