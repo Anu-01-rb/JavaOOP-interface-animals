@@ -36,6 +36,6 @@ abstract public class Poultry extends Animals implements Flyable{
     
     @Override
     public void fly() {
-        System.out.printf("%s is flying and %s can walking a little.\n", this.name, this.name);
+        System.out.printf("%S is flying.\n", this.name);
     }
 }

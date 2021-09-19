@@ -5,6 +5,8 @@
 package com.anurak.animal;
 
 import com.anurak.animal.lives.*;
+import com.anurak.animal.vehicle.*;
+
 /**
  *
  * @author Anurak Yutthanawa
@@ -26,6 +28,9 @@ public class Main {
         Snake medusa = new Snake("Medusa", "Dark");
         Earthworm palm = new Earthworm("Palm", "Pink");
         
+        Airplane nok = new Airplane("Boing", "747" , "Rolls-Royce RB211");
+        Car audi = new Car("Audi", "A7", "3.0 L V6");
+        
         Animals[] sut = {nini, ricky, plaifah, nemo, krabby, gag, vampy, baroque, medusa, palm};
         
         for (Animals i : sut){
@@ -33,5 +38,14 @@ public class Main {
             i.move();
             System.out.println(i);
         }
+        
+        nini.run();
+        ricky.run();
+        plaifah.run();
+        audi.run();
+        
+        gag.fly();
+        vampy.fly();
+        nok.fly();
     }
 }
