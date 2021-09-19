@@ -1,7 +1,7 @@
 
 /*
  * OOP : Object-Oriented Programming
- * Abstract : Animals Project
+ * Interface : Animals Project
  */
 package com.anurak.animal.lives;
 

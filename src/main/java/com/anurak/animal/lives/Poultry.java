@@ -1,8 +1,10 @@
 /*
  * OOP : Object-Oriented Programming
- * Abstract : Animals Project
+ * Interface : Animals Project
  */
 package com.anurak.animal.lives;
+
+import com.anurak.animal.interfaces.Flyable;
 
 /**
  *
@@ -11,7 +13,7 @@ package com.anurak.animal.lives;
  * Burapha University
  *
  */
-abstract public class Poultry extends Animals{
+abstract public class Poultry extends Animals implements Flyable{
     protected boolean lowFly;
     protected boolean floatOnWater;
     
@@ -26,9 +28,14 @@ abstract public class Poultry extends Animals{
     
     @Override
     public void move(){
-    	System.out.printf("%s is flying and %s can walking a little.\n", this.name, this.name);
+    	fly();
     }
     
     @Override
     abstract public String toString();
+    
+    @Override
+    public void fly() {
+        System.out.printf("%s is flying and %s can walking a little.\n", this.name, this.name);
+    }
 }
