@@ -11,6 +11,6 @@ package com.anurak.animal.interfaces;
  * Burapha University
  *
  */
-public interface Flyable {
-    public void fly();
+public interface Runnable {
+    public void run();
 }

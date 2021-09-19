@@ -4,6 +4,8 @@
  */
 package com.anurak.animal.lives;
 
+import com.anurak.animal.interfaces.Runnable;
+
 /**
  *
  * @author Anurak Yutthanawa
@@ -11,7 +13,7 @@ package com.anurak.animal.lives;
  * Burapha University
  *
  */
-abstract public class Land extends Animals{
+abstract public class Land extends Animals implements Runnable{
     
     
     protected int numberOfLegs;
@@ -27,7 +29,12 @@ abstract public class Land extends Animals{
     
     @Override
     public void move(){
-    	System.out.printf("%s is walking", this.name);
+    	run();
+    }
+    
+    @Override
+    public void run(){
+        System.out.printf("%s is running", this.name);
     }
     
     @Override
